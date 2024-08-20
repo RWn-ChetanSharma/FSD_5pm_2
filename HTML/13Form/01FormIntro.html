@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form In HTML</title>
+  </head>
+  <body>
+    <h1>Form In HTML</h1>
+    <hr />
+    <!-- action => path of backend  -->
+    <!-- method =>  -->
+    <!-- 1. get  -->
+    <!-- => less secure -->
+    <!-- => Shows data in URL -->
+    <!-- => Easily Bookmarked -->
+    <!-- => limitation of character  -->
+    <!-- 2. Post -->
+    <!-- => secure -->
+    <!-- => Not bookmarked -->
+    <!-- => no limitation -->
+    <!-- => file supported -->
+
+    <!-- enctype =>  -->
+    <!-- 1. application/x-www-form-urlencoded  => By Default -->
+    <!-- 2. multipart/form-data => Keep files separately =>  -->
+    <!-- => Multipart form data: The ENCTYPE attribute of 
+            <form> tag specifies the method of encoding for the form data.
+            It is one of the two ways of encoding the HTML form. It is specifically 
+            used when file uploading is required in HTML form. 
+            It sends the form data to server in multiple parts because of large size of file. -->
+    <!-- 3. text/plain => For Debugging purpose  -->
+
+    <!-- & => Multiple Data  -->
+    <!-- ? => String  -->
+    <fieldset>
+      <legend>My Form</legend>
+      <form action="" method="post" enctype="">
+        <label for="uname">User Name</label>
+        <input type="text" name="uname" id="uname" />
+        <br /><br />
+        <label for="upass">User Pass</label>
+        <input type="password" name="upass" id="upass" />
+        <br /><br />
+        <button>Submit</button>
+      </form>
+    </fieldset>
+  </body>
+</html>
