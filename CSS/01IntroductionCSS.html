@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Introduction</title>
+
+    <!-- External CSS  -->
+
+    <!-- External CSS is written in the separate file with the help of link tag   -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS  -->
+
+    <!-- With the help style tag, CSS is written in the head tag  -->
+
+    <style>
+        /* Syntax :- 
+        
+            Selector{
+                property 1: value 1;
+                property 2: value 2;
+            }
+
+        */
+        .Internal{
+            background-color: crimson;
+            color: aliceblue;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>CSS - Cascading Style Sheet</h1>
+    <p>To beautify our HTML Document.</p>
+    <h2>Ways To Apply CSS</h2>
+    <ul>
+        <!-- Inline CSS => with the help of style attribute -->
+         <!-- Syntax => style="property 1 : value 1; property 2 : value 2;" -->
+        <li style="background-color: blueviolet; color: antiquewhite;">Inline CSS</li>
+        <li class="Internal">Internal CSS</li>
+        <li class="External">External CSS</li>
+    </ul>
+
+</body>
+</html>

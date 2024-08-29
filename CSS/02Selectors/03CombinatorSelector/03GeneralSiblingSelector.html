@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selector</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+        .parent{
+            border: 2px solid black;
+        }
+        .parent ~ p{
+            background-color: crimson;
+            color: aliceblue;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>General Sibling Selector (~)</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+    <div class="parent">
+        <span>Lorem ipsum dolor sit amet.</span>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+        <div class="child">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, modi!</p>
+    
+</body>
+</html>
