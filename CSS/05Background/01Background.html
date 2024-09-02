@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background In CSS</title>
+
+    <style>
+      div {
+        border: 10px dashed blue;
+        height: 500px;
+        margin: 10px 0px;
+        font-size: 30px;
+      }
+      .background-clip {
+        color: aliceblue;
+        padding: 100px;
+        background-image: url(../../Images/banner.jpg);
+        background-clip: border-box;
+        background-clip: padding-box;
+        background-clip: content-box;
+      }
+      .background-attachment {
+        color: aliceblue;
+        background-image: url(../../Images/banner.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+
+      }
+      
+      .background-color {
+        background-color: brown;
+      }
+      .background-image {
+        color: aliceblue;
+        background-image: url(../../Images/banner.jpg);
+      }
+      .background-origin {
+        color: aliceblue;
+        padding: 100px;
+        background-image: url(../../Images/banner.jpg);
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-origin: padding-box;
+        background-origin: content-box;
+      }
+      .background-position {
+        color: aliceblue;
+        background-image: url(../../Images/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: top;
+        background-position: bottom;
+        background-position: right;
+        background-position: left;
+        background-position: center;
+        background-position: 200px 200px;
+        background-position: 50% 50%;
+
+      }
+      .background-repeat {
+        color: aliceblue;
+        background-image: url(../../Images/banner.jpg);
+        background-repeat: space;
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: no-repeat;
+      }
+      .background-size {
+        color: aliceblue;
+        background-image: url(../../Images/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+        background-size: 100% 100%;
+      }
+      .background-shorthand{
+        color: aliceblue;
+        background: url(../../Images/leaf.avif)no-repeat center center/cover;
+      }
+      .background-multiple{
+        color: aliceblue;
+        background-image: url(../../Images/banner.jpg), url(../../Images/leaf.avif);
+        background-repeat: no-repeat;
+        background-position: left, right;
+        background-size: 300px, cover;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Background In CSS</h1>
+    <hr>
+    <li>background-clip</li>
+    <li>background-attachment</li>
+    <li>background-color</li>
+    <li>background-image</li>
+    <li>background-origin</li>
+    <li>background-position</li>
+    <li>background-repeat</li>
+    <li>background-size</li>
+    <li>background-shorthand</li>
+    <li>background-multiple</li>
+
+    <hr />
+
+    <div class="background-clip">background-clip</div>
+    <div class="background-attachment">background-attachment</div>
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-origin">background-origin</div>
+    <div class="background-position">background-position</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-size">background-size</div>
+    <div class="background-shorthand">background-shorthand</div>
+    <div class="background-multiple">background-multiple</div>
+  </body>
+</html>
