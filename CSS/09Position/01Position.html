@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position In CSS</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+     
+      h1{
+        font-size: 40px;
+      }
+      div {
+        font-size: 50px;
+      }
+      li {
+        list-style-position: inside;
+        list-style-type: none;
+        font-size: 30px;
+      }
+      div[class*="box"] {
+        height: 500px;
+        border: 5px solid blue;
+      }
+      .box-1 {
+        background-color: rgb(149, 0, 224);
+      }
+      .box-2 {
+        background-color: orange;
+      }
+      .box-3 {
+        background-color: green;
+      }
+      .box-4 {
+        background-color: yellow;
+      }
+      .box-5 {
+        background-color: grey;
+        position: relative;
+        overflow: hidden;
+
+      }
+      .box-6 {
+        background-color: rgb(232, 31, 108);
+      }
+
+      .fixed {
+        background-color: black;
+        color: aliceblue;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+      }
+      .sticky{
+        background-color: tomato;
+        color: aliceblue;
+        text-align: center;
+        position: sticky;
+        top: 0;
+      }
+
+      div[class*="box-ab"] {
+        width: 250px;
+        height: 250px;
+        border: 5px dashed lime;
+        position: absolute;
+      }
+      .box-ab-1{
+        background-color: gold;
+        top: 20px;
+        left: 20px;
+        z-index: 100;
+      }
+      .box-ab-2{
+        background-color: orchid;
+        top: 50px;
+        left: 50px;
+        z-index: 1;
+      }
+      .box-ab-3{
+        background-color: turquoise;
+        top: 80px;
+        left: 80px;
+        z-index: 10;
+      }
+      .box-ab-4{
+        background-color: tomato;
+        top: 100px;
+        right: -100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Position In CSS</h1>
+    <ul>
+      <li>Static</li>
+      <li>sticky</li>
+      <li>fixed</li>
+      <li>relative</li>
+      <li>absolute</li>
+    </ul>
+
+    <hr />
+    <div class="box-1">
+      Box-1
+      <div class="fixed">Fixed</div>
+    </div>
+    <div class="box-2">Box-2</div>
+    <div class="box-3">
+      Box-3
+      <div class="sticky">Sticky</div>
+    </div>
+    <div class="box-4">Box-4</div>
+    <div class="box-5">Box-5
+        <div class="box-ab-1">box-ab-1</div>
+        <div class="box-ab-2">box-ab-2</div>
+        <div class="box-ab-3">box-ab-3</div>
+        <div class="box-ab-4">box-ab-4</div>
+    </div>
+    <div class="box-6">Box-6</div>
+  </body>
+</html>
