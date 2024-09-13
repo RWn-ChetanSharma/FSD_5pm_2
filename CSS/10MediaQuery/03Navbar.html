@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+
+    <!-- Font Awesome CDN  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS  -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: blueviolet;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav {
+        background-color: black;
+        color: aliceblue;
+        padding: 20px;
+        font-size: 30px;
+        position: relative;
+      }
+      li {
+        list-style-type: none;
+        padding: 0px 30px;
+      }
+      a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      input{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 20px;
+        display: none;
+        opacity: 0;
+
+      }
+      .humburger{
+        display: none;
+
+      }
+
+      @media (max-width: 576px) {
+       body{
+        background-color: brown;
+       }
+       input{
+        display: block;
+      }
+      .humburger{
+        display: block;
+      }
+      .navbar{
+        display: none;
+        
+
+
+      }
+      li{
+        padding: 5px 0px;
+        text-align: center;
+      }
+      input:checked + .navbar{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 250px;
+        border: 3px solid lime;
+        background-color: cornflowerblue;
+        color: khaki;
+        top: 90px;
+        right: 0px;
+        animation-name: magicNavbar;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+      }
+
+      @keyframes magicNavbar {
+        from{
+            margin-right: -500px;
+            background-color: chocolate;
+        }
+        to{
+            margin-right: 0px;
+            background-color: cornflowerblue;
+        }
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="row">
+      <div class="logo">
+        <h2>Logo</h2>
+      </div>
+      <input type="checkbox">
+      <ul class="navbar row">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <i class="fa-solid fa-bars humburger"></i>
+    </nav>
+  </body>
+</html>
