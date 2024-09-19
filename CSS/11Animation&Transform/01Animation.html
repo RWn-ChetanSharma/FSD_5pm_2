@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation </title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid lime;
+            background-color: blue;
+            animation-name: jadu;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+
+        }
+
+        /* @keyframes jadu {
+            from{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: 800px;
+            }
+        } */
+
+        @keyframes jadu {
+            0%{
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+            25%{
+                margin-left: 800px;
+                margin-top: 0px;
+                transform: rotate(45deg);
+
+            }
+            50%{
+                margin-left: 800px;
+                margin-top: 500px;
+                transform: rotate(90deg);
+
+            }
+            75%{
+                margin-left: 0px;
+                margin-top: 500px;
+                transform: rotate(135deg);
+
+            }
+            100%{
+                margin-left: 0px;
+                margin-top: 0px;
+                transform: rotate(180deg);
+
+            }
+        }  
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+
+
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/transition -->

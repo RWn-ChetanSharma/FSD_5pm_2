@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Col-50</title>
+
+    <!-- CSS  -->
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #section-1{
+            background-color: crimson;
+            color: aliceblue;
+            padding: 100px 0px;
+        }
+        #section-2{
+            background-color: blueviolet;
+            color: aliceblue;
+            padding: 100px 0px;
+        }
+        .container
+        {
+            width: 90%;
+            margin: auto;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .col-50{
+            width: 50%;
+        }
+        .img-round{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: url(../../Images/banner.jpg)no-repeat center center/cover;
+            margin: auto;
+        }
+        h1{
+            font-size: 50px;
+
+        }
+        h1+p{
+            font-size: 30px;
+            padding: 20px 0px;
+        }
+        button{
+            background-color: teal;
+            color: khaki;
+            padding: 10px 30px;
+            border: 1px solid teal;
+        }
+       
+    </style>
+  </head>
+  <body>
+    <section id="section-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-50">
+            <div class="img-round"></div>
+          </div>
+          <div class="col-50">
+            <h1>Heading</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              ipsam alias dolorum illum veniam numquam expedita autem tempora
+              sunt, cum omnis voluptatibus. Molestias, consequatur vero! Laborum
+              sunt eligendi illum corporis?
+            </p>
+            <button>Click Me</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2  -->
+
+    <section id="section-2">
+      <div class="container">
+        <div class="row">
+       
+          <div class="col-50">
+            <h1>Heading</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              ipsam alias dolorum illum veniam numquam expedita autem tempora
+              sunt, cum omnis voluptatibus. Molestias, consequatur vero! Laborum
+              sunt eligendi illum corporis?
+            </p>
+            <button>Click Me</button>
+          </div>
+
+          <div class="col-50">
+            <div class="img-round"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
